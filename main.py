@@ -1,8 +1,10 @@
-from windows_static import Principal
-import tkinter as tk
+import sys
+from interfaz.principal import MainWindows
+from PyQt6.QtWidgets import QApplication
 
 
 if __name__ == '__main__':
-    root = tk.Tk()
-    app = Principal(root)
-    root.mainloop()
+    app = QApplication(sys.argv)
+    window = MainWindows()
+    
+    sys.exit(app.exec()) 

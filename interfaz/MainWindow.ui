@@ -365,6 +365,68 @@ color: rgb(255, 255, 255);</string>
      <string>INSERTAR T.</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="btnupdate">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>240</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Hack Nerd Font Mono</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 35, 51);
+border-radius: 5px;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>UPDATE T.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btndelete">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>240</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Hack Nerd Font Mono</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 35, 51);
+border-radius: 5px;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>DELETE T.</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

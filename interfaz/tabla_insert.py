@@ -11,6 +11,7 @@ class InsertTable(QMainWindow):
         self.showTable()
         self.elementos=[]
         self.tinsert.btntable.clicked.connect(self.insert)
+        self.tinsert.return1.clicked.connect(self.regreso)
         
     def showTable(self):
         columns = ['NOMBRE', 'APELLIDO', 'DIRECCION']
@@ -29,3 +30,8 @@ class InsertTable(QMainWindow):
         self.tinsert.table.setItem(row_count, 0, QTableWidgetItem(self.name))
         self.tinsert.table.setItem(row_count, 1, QTableWidgetItem(self.last_name))
         self.tinsert.table.setItem(row_count, 2, QTableWidgetItem(self.direction))
+    
+    def regreso(self):
+        from interfaz.principal import Windows
+        self.regreso = Windows()
+        self.tinsert.close()

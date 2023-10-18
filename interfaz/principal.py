@@ -11,6 +11,8 @@ from .opciones import OptionCombo
 from .radiob import RadioButton
 from .table import Table
 from .tabla_insert import InsertTable
+from .update import UpdateTable
+from .delete import DeleteTable
 
 
 class Windows(QMainWindow):
@@ -25,6 +27,8 @@ class Windows(QMainWindow):
         self.main.btnrbutton.clicked.connect(self.openRadioButton)
         self.main.btntabla.clicked.connect(self.openTable)
         self.main.btntable2.clicked.connect(self.openInsertTable)
+        self.main.btnupdate.clicked.connect(self.openUpdateTable)
+        self.main.btndelete.clicked.connect(self.openDeleteTable)
     
     def openMessages(self):
         self.messages = Menssages()
@@ -61,3 +65,11 @@ class Windows(QMainWindow):
     def openInsertTable(sefl):
         sefl.insert = InsertTable()
         sefl.main.close()
+        
+    def openUpdateTable(self):
+        self.update = UpdateTable()
+        self.main.close()
+        
+    def openDeleteTable(self):
+        self.delete = DeleteTable()
+        self.main.close()

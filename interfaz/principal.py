@@ -13,6 +13,10 @@ from .table import Table
 from .tabla_insert import InsertTable
 from .update import UpdateTable
 from .delete import DeleteTable
+from .filter import FilterTable
+from .password import PasswordSecurity
+from .rutas import RouteFile
+from .html import HTMLInsert
 
 
 class Windows(QMainWindow):
@@ -29,6 +33,10 @@ class Windows(QMainWindow):
         self.main.btntable2.clicked.connect(self.openInsertTable)
         self.main.btnupdate.clicked.connect(self.openUpdateTable)
         self.main.btndelete.clicked.connect(self.openDeleteTable)
+        self.main.btnfilter.clicked.connect(self.openFilter)
+        self.main.btnpassword.clicked.connect(self.openPassword)
+        self.main.btnruta.clicked.connect(self.openRoutes)
+        self.main.btnhtml.clicked.connect(self.openHTML)
     
     def openMessages(self):
         self.messages = Menssages()
@@ -72,4 +80,20 @@ class Windows(QMainWindow):
         
     def openDeleteTable(self):
         self.delete = DeleteTable()
+        self.main.close()
+        
+    def openFilter(self):
+        self.filter = FilterTable()
+        self.main.close()
+    
+    def openPassword(self):
+        self.password = PasswordSecurity()
+        self.main.close()
+        
+    def openRoutes(self):
+        self.ruta = RouteFile()
+        self.main.close()
+        
+    def openHTML(self):
+        self.html = HTMLInsert()
         self.main.close()

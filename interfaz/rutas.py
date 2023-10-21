@@ -12,7 +12,7 @@ class RouteFile(QMainWindow):
         
     def openRoute(self):
         self.archivo = QFileDialog()
-        arch, arg = self.archivo.getOpenFileName(None,"archivo", "archivo")
+        arch, arg = self.archivo.getSaveFileName(None, 'GUARDAR PDF', '', 'PDF (*.pdf)')
         self.ruta.textruta.setText(arch)
         """folders:
         folder = self.archivo.getExistingDirectory(None, 'seleccionar carpeta', "")

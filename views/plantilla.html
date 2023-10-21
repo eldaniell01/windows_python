@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Document</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Document</title>
 </head>
     <body>
     <h1 style="text-align: center;"><strong>Aplicación</strong></h1>
@@ -15,11 +14,13 @@
             <td style="width: 33.3333%; text-align: center; height: 18px;"><strong>APELLIDO</strong></td>
             <td style="width: 33.3333%; text-align: center; height: 18px;"><strong>DIRECCION</strong></td>
         </tr>
+        {%for language in languages%}
         <tr style="height: 18px;">
-            <td style="width: 33.3333%; text-align: center; height: 18px;">{{name}}</td>
-            <td style="width: 33.3333%; text-align: center; height: 18px;">{{lastname}}</td>
-            <td style="width: 33.3333%; text-align: center; height: 18px;">{{address}}</td>
+            <td style="width: 33.3333%; text-align: center; height: 18px;">{{language.id}}</td>
+            <td style="width: 33.3333%; text-align: center; height: 18px;">{{language.language}}</td>
+            <td style="width: 33.3333%; text-align: center; height: 18px;">{{language.date}}</td>
         </tr>
+        {%endfor%}
         </tbody>
     </table>
     </body>

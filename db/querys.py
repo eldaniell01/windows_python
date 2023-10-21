@@ -20,3 +20,11 @@ class Querys:
         language = self.db.execute_query(query)
         self.db.close_connection()
         return language
+    
+    def updateLanguges(self, language, id):
+        query = """
+                    UPDATE language SET name=%s WHERE language_id=%s
+                """
+        values = (language, id)
+        self.db.execute_query(query, values)
+        self.db.close_connection()

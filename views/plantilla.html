@@ -7,18 +7,18 @@
 </head>
     <body>
     <h1 style="text-align: center;"><strong>Aplicación</strong></h1>
-    <table border="1" style="border-collapse: collapse; width: 100%; height: 36px;">
+    <table border="1" style="border: black 1px solid; border-collapse: collapse; width: 100%; height: 36px;">
         <tbody>
-            <tr style="height: 18px;">
-            <td style="width: 33.3333%; text-align: center; height: 18px;"><strong>NOMBRE</strong></td>
-            <td style="width: 33.3333%; text-align: center; height: 18px;"><strong>APELLIDO</strong></td>
-            <td style="width: 33.3333%; text-align: center; height: 18px;"><strong>DIRECCION</strong></td>
+            <tr style="border: black 1px solid; height: 18px;">
+            <td style="border: black 1px solid; width: 33.3333%; text-align: center; height: 18px;"><strong>ID</strong></td>
+            <td style="border: black 1px solid; width: 33.3333%; text-align: center; height: 18px;"><strong>LENGUAJE</strong></td>
+            <td style="border: black 1px solid; width: 33.3333%; text-align: center; height: 18px;"><strong>FECHA Y HORA</strong></td>
         </tr>
         {%for language in languages%}
-        <tr style="height: 18px;">
-            <td style="width: 33.3333%; text-align: center; height: 18px;">{{language.id}}</td>
-            <td style="width: 33.3333%; text-align: center; height: 18px;">{{language.language}}</td>
-            <td style="width: 33.3333%; text-align: center; height: 18px;">{{language.date}}</td>
+        <tr style="border: black 1px solid; height: 18px;">
+            <td style="border: black 1px solid; width: 33.3333%; text-align: center; height: 18px;">{{language.id}}</td>
+            <td style="border: black 1px solid; width: 33.3333%; text-align: center; height: 18px;">{{language.language}}</td>
+            <td style="border: black 1px solid; width: 33.3333%; text-align: center; height: 18px;">{{language.date}}</td>
         </tr>
         {%endfor%}
         </tbody>

@@ -19,6 +19,7 @@ class QuerysDataBase(QMainWindow):
         self.consulta.textlanguage.textChanged.connect(self.filterLanguages)
         self.consulta.btnupdate.clicked.connect(self.updateLanguages)
         self.consulta.btnpdf.clicked.connect(self.createPDF)
+        self.consulta.return1.clicked.connect(self.regreso)
         
         self.showTable()
         
@@ -88,4 +89,7 @@ class QuerysDataBase(QMainWindow):
         html_content = template.render(context)
         HTML(string=html_content).write_pdf(pdf_file)
         
-        
+    def regreso(self):
+        from interfaz.principal import Windows
+        self.regreso = Windows()
+        self.consulta.close()

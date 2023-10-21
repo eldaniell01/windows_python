@@ -17,6 +17,8 @@ from .filter import FilterTable
 from .password import PasswordSecurity
 from .rutas import RouteFile
 from .html import HTMLInsert
+from .conexion import DataBase
+from .consultas import QuerysDataBase
 
 
 class Windows(QMainWindow):
@@ -37,6 +39,8 @@ class Windows(QMainWindow):
         self.main.btnpassword.clicked.connect(self.openPassword)
         self.main.btnruta.clicked.connect(self.openRoutes)
         self.main.btnhtml.clicked.connect(self.openHTML)
+        self.main.btndatabase.clicked.connect(self.openDataBase)
+        self.main.btnconsultas.clicked.connect(self.openQuerys)
     
     def openMessages(self):
         self.messages = Menssages()
@@ -96,4 +100,12 @@ class Windows(QMainWindow):
         
     def openHTML(self):
         self.html = HTMLInsert()
+        self.main.close()
+        
+    def openDataBase(self):
+        self.conexion = DataBase()
+        self.main.close()
+        
+    def openQuerys(self):
+        self.query = QuerysDataBase()
         self.main.close()

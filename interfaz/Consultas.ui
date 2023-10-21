@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>413</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(222, 239, 231);</string>
+  </property>
+  <widget class="QPushButton" name="btninsert">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>280</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Hack Nerd Font Mono</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>INSERT</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnupdate">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>280</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Hack Nerd Font Mono</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>UPDATE</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnlist">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>280</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Hack Nerd Font Mono</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>LIST</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnpdf">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>280</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Hack Nerd Font Mono</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>GUARDAR PDF</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="return1">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>350</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Hack Nerd Font Mono</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>REGRESAR</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="table">
+   <property name="geometry">
+    <rect>
+     <x>45</x>
+     <y>101</y>
+     <width>641</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Hack Nerd Font Mono</family>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="datetime">
+   <property name="geometry">
+    <rect>
+     <x>443</x>
+     <y>35</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Hack Nerd Font Mono</family>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="currentSection">
+    <enum>QDateTimeEdit::DaySection</enum>
+   </property>
+   <property name="displayFormat">
+    <string>d/MM/yyyy hh:mm:ss</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="timeSpec">
+    <enum>Qt::TimeZone</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="textlanguage">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>34</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Hack Nerd Font Mono</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="placeholderText">
+    <string>escriba un idioma</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

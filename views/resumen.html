@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: red;"><span style="text-decoration: underline;"><strong>INVENTARIO</strong></span></h1>
+    <table style="height: 53px; width: 100%; border-collapse: collapse;" border="1" cellspacing="2">
+        <tbody>
+            <tr style="height: 18px;">
+                <td style="width: 33.3333%; text-align: center; height: 18px;"><span style="color: #0000ff;"><strong>No.</strong></span></td>
+                <td style="width: 33.3333%; text-align: center; height: 18px;"><span style="color: #0000ff;"><strong>PELICULA</strong></span></td>
+                <td style="width: 33.3333%; text-align: center; height: 18px;"><span style="color: #0000ff;"><strong>TIENDA</strong></span></td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 33.3333%; text-align: center; height: 18px;"><span style="color: #000000;">{{films.num}}</span></td>
+                <td style="width: 33.3333%; text-align: center; height: 18px;"><span style="color: #000000;">{{films.film}}</span></td>
+                <td style="width: 33.3333%; text-align: center; height: 18px;"><span style="color: #000000;">{{films.store}}</span></td>
+            </tr>
+            <tr>
+                <td style="width: 33.3333%; text-align: center;" colspan="2"><span style="color: #000000;">&nbsp;<strong>TOTAL</strong></span></td>
+                <td style="width: 33.3333%; text-align: center;"><span style="color: #000000;">{{film.total}}&nbsp;</span></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

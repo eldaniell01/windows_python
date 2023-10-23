@@ -36,7 +36,6 @@ class Inventory(QMainWindow):
         for row, datos in enumerate(data):
             for column, dato in enumerate(datos):
                 self.inventory.table.setItem(row, column, QTableWidgetItem(str(dato)))
-                
         self.inventory.table.resizeColumnsToContents()
         
         
@@ -46,9 +45,9 @@ class Inventory(QMainWindow):
         data = self.listinventory.listFilm()
         for row, datos in enumerate(data):
             options.add(str(datos[0]))
-        lista = list(options)
-        lista.sort()
-        self.inventory.options.addItems(lista)
+        selects = list(options)
+        selects.sort()
+        self.inventory.options.addItems(selects)
     
     def store1(self):
         if self.inventory.store1.isChecked():

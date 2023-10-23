@@ -20,6 +20,7 @@ from .html import HTMLInsert
 from .conexion import DataBase
 from .consultas import QuerysDataBase
 from .inventory import Inventory
+from .video import DownloadVideo
 
 
 class Windows(QMainWindow):
@@ -43,6 +44,7 @@ class Windows(QMainWindow):
         self.main.btndatabase.clicked.connect(self.openDataBase)
         self.main.btnconsultas.clicked.connect(self.openQuerys)
         self.main.btninventory.clicked.connect(self.openInventory)
+        self.main.btnyoutube.clicked.connect(self.openVideo)
     
     def openMessages(self):
         self.messages = Menssages()
@@ -115,3 +117,8 @@ class Windows(QMainWindow):
     def openInventory(self):
         self.inventory = Inventory()
         self.main.close()
+        
+    def openVideo(self):
+        self.video = DownloadVideo()
+        self.main.close()
+    

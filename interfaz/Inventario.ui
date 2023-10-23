@@ -39,9 +39,9 @@
   <widget class="QPushButton" name="btnpdf">
    <property name="geometry">
     <rect>
-     <x>400</x>
+     <x>260</x>
      <y>290</y>
-     <width>181</width>
+     <width>141</width>
      <height>41</height>
     </rect>
    </property>
@@ -81,14 +81,14 @@
     <rect>
      <x>40</x>
      <y>20</y>
-     <width>221</width>
+     <width>301</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Hack Nerd Font Mono</family>
-     <pointsize>11</pointsize>
+     <pointsize>10</pointsize>
      <bold>true</bold>
     </font>
    </property>
@@ -102,8 +102,8 @@
   <widget class="QRadioButton" name="store1">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>22</y>
+     <x>360</x>
+     <y>20</y>
      <width>96</width>
      <height>31</height>
     </rect>
@@ -115,8 +115,8 @@
   <widget class="QRadioButton" name="store2">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>22</y>
+     <x>480</x>
+     <y>20</y>
      <width>96</width>
      <height>31</height>
     </rect>
@@ -166,6 +166,26 @@
    </property>
    <property name="text">
     <string>REGRESAR</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnpdf_2">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>290</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Hack Nerd Font Mono</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>RESUMEN PDF</string>
    </property>
   </widget>
  </widget>

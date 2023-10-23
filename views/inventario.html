@@ -10,17 +10,19 @@
     <table style="border-collapse: collapse; width: 100%;" border="1">
         <tbody>
             <tr>
-                <td style="width: 25%; text-align: center; color: #024059;"><strong>ID</strong></td>
+                <td style="width: 25%; text-align: center; color: #024059;"><strong>No.</strong></td>
                 <td style="width: 25%; text-align: center; color: #024059;"><strong>PELICULA</strong></td>
                 <td style="width: 25%; text-align: center; color: #024059;"><strong>TIENDA</strong></td>
                 <td style="width: 25%; text-align: center; color: #024059;"><strong>FECHA</strong></td>
             </tr>
-            <tr>
-                <td style="width: 25%; text-align: center;">{{films.id}}</td>
-                <td style="width: 25%; text-align: center;">{{films.film}}</td>
-                <td style="width: 25%; text-align: center;">{{films.store}}</td>
-                <td style="width: 25%; text-align: center;">{{films.date}}</td>
+            {%for film in films%}
+            <tr style="border: black 1px solid; height: 18px; font-family: sans-serif; font-size: 12px;">
+                <td style="width: 25%; text-align: center;">{{film.id}}</td>
+                <td style="width: 25%; text-align: center;">{{film.film}}</td>
+                <td style="width: 25%; text-align: center;">{{film.store}}</td>
+                <td style="width: 25%; text-align: center;">{{film.date}}</td>
             </tr>
+            {%endfor%}
         </tbody>
     </table>
 </body>

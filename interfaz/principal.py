@@ -19,6 +19,7 @@ from .rutas import RouteFile
 from .html import HTMLInsert
 from .conexion import DataBase
 from .consultas import QuerysDataBase
+from .inventory import Inventory
 
 
 class Windows(QMainWindow):
@@ -41,6 +42,7 @@ class Windows(QMainWindow):
         self.main.btnhtml.clicked.connect(self.openHTML)
         self.main.btndatabase.clicked.connect(self.openDataBase)
         self.main.btnconsultas.clicked.connect(self.openQuerys)
+        self.main.btninventory.clicked.connect(self.openInventory)
     
     def openMessages(self):
         self.messages = Menssages()
@@ -108,4 +110,8 @@ class Windows(QMainWindow):
         
     def openQuerys(self):
         self.query = QuerysDataBase()
+        self.main.close()
+    
+    def openInventory(self):
+        self.inventory = Inventory()
         self.main.close()

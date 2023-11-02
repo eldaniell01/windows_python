@@ -21,6 +21,9 @@ from .conexion import DataBase
 from .consultas import QuerysDataBase
 from .inventory import Inventory
 from .video import DownloadVideo
+from .number import LocationNumber
+from .convertir import ImgConverter
+from .remove import RemoveBG
 
 
 class Windows(QMainWindow):
@@ -45,6 +48,9 @@ class Windows(QMainWindow):
         self.main.btnconsultas.clicked.connect(self.openQuerys)
         self.main.btninventory.clicked.connect(self.openInventory)
         self.main.btnyoutube.clicked.connect(self.openVideo)
+        self.main.btnlocation.clicked.connect(self.openLocation)
+        self.main.btnimg.clicked.connect(self.openConverterImg)
+        self.main.btnremove.clicked.connect(self.openRemovebg)
     
     def openMessages(self):
         self.messages = Menssages()
@@ -122,3 +128,15 @@ class Windows(QMainWindow):
         self.video = DownloadVideo()
         self.main.close()
     
+    def openLocation(self):
+        self.location = LocationNumber()
+        self.main.close()
+        
+    def openConverterImg(self):
+        self.converter = ImgConverter()
+        self.main.close()
+        
+    def openRemovebg(self):
+        self.rembg = RemoveBG()
+        self.main.close()
+        

@@ -24,6 +24,7 @@ from .video import DownloadVideo
 from .number import LocationNumber
 from .convertir import ImgConverter
 from .remove import RemoveBG
+from .codes import BarCode
 
 
 class Windows(QMainWindow):
@@ -51,6 +52,7 @@ class Windows(QMainWindow):
         self.main.btnlocation.clicked.connect(self.openLocation)
         self.main.btnimg.clicked.connect(self.openConverterImg)
         self.main.btnremove.clicked.connect(self.openRemovebg)
+        self.main.btnbarcode.clicked.connect(self.openBarCode)
     
     def openMessages(self):
         self.messages = Menssages()
@@ -138,5 +140,9 @@ class Windows(QMainWindow):
         
     def openRemovebg(self):
         self.rembg = RemoveBG()
+        self.main.close()
+        
+    def openBarCode(self):
+        self.bcode = BarCode()
         self.main.close()
         

@@ -25,6 +25,7 @@ from .number import LocationNumber
 from .convertir import ImgConverter
 from .remove import RemoveBG
 from .codes import BarCode
+from .docExcel import ExcelDoc
 
 
 class Windows(QMainWindow):
@@ -53,6 +54,7 @@ class Windows(QMainWindow):
         self.main.btnimg.clicked.connect(self.openConverterImg)
         self.main.btnremove.clicked.connect(self.openRemovebg)
         self.main.btnbarcode.clicked.connect(self.openBarCode)
+        self.main.btnexcel.clicked.connect(self.openExcel)
     
     def openMessages(self):
         self.messages = Menssages()
@@ -146,3 +148,6 @@ class Windows(QMainWindow):
         self.bcode = BarCode()
         self.main.close()
         
+    def openExcel(self):
+        self.excel= ExcelDoc()
+        self.main.close()

@@ -17,6 +17,8 @@ class BarCode(QMainWindow):
         self.bcode.show()
         self.bcode.btnlist.clicked.connect(self.languages)
         self.bcode.btnpdf.clicked.connect(self.get_bar_code)
+        self.bcode.return1.clicked.connect(self.regreso)
+        self.bcode.textlenguate.textChanged.connect(self.filterLanguages)
         self.showTable()
         
     def showTable(self):
@@ -66,6 +68,19 @@ class BarCode(QMainWindow):
         html_content = template.render(img_paths=str(img_path))
         HTML(string=html_content).write_pdf(pdf_file)
         
+    def regreso(self):
+        from interfaz.principal import Windows
+        self.regreso = Windows()
+        self.bcode.close()
+        
+    def filterLanguages(self):
+        texto = self.bcode.textlenguate.text().upper()
+        for row in range(self.bcode.table.rowCount()):
+            row_text=[self.bcode.table.item(row, col).text().upper() for col in range(self.bcode.table.columnCount())]
+            if any(texto in text for text in row_text):
+                self.bcode.table.setRowHidden(row, False)
+            else:
+                self.bcode.table.setRowHidden(row,True)
         
         
         

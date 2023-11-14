@@ -21,7 +21,7 @@ from .conexion import DataBase
 from .consultas import QuerysDataBase
 from .inventory import Inventory
 from .video import DownloadVideo
-from .number import LocationNumber
+from .grafica import PlotBar
 from .convertir import ImgConverter
 from .remove import RemoveBG
 from .codes import BarCode
@@ -50,7 +50,7 @@ class Windows(QMainWindow):
         self.main.btnconsultas.clicked.connect(self.openQuerys)
         self.main.btninventory.clicked.connect(self.openInventory)
         self.main.btnyoutube.clicked.connect(self.openVideo)
-        self.main.btnlocation.clicked.connect(self.openLocation)
+        self.main.btngraficar.clicked.connect(self.openPlotBar)
         self.main.btnimg.clicked.connect(self.openConverterImg)
         self.main.btnremove.clicked.connect(self.openRemovebg)
         self.main.btnbarcode.clicked.connect(self.openBarCode)
@@ -132,8 +132,8 @@ class Windows(QMainWindow):
         self.video = DownloadVideo()
         self.main.close()
     
-    def openLocation(self):
-        self.location = LocationNumber()
+    def openPlotBar(self):
+        self.bar = PlotBar()
         self.main.close()
         
     def openConverterImg(self):

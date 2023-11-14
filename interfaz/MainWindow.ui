@@ -675,7 +675,7 @@ color: rgb(255, 255, 255);</string>
      <string>DOWNLOAD V</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnlocation">
+   <widget class="QPushButton" name="btngraficar">
     <property name="geometry">
      <rect>
       <x>300</x>

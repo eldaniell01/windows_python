@@ -26,6 +26,8 @@ from .convertir import ImgConverter
 from .remove import RemoveBG
 from .codes import BarCode
 from .docExcel import ExcelDoc
+from .fileXML import FileXML
+from .txml import Txml
 
 
 class Windows(QMainWindow):
@@ -55,6 +57,8 @@ class Windows(QMainWindow):
         self.main.btnremove.clicked.connect(self.openRemovebg)
         self.main.btnbarcode.clicked.connect(self.openBarCode)
         self.main.btnexcel.clicked.connect(self.openExcel)
+        self.main.btnxml.clicked.connect(self.openXML)
+        self.main.btntxml.clicked.connect(self.openTXML)
     
     def openMessages(self):
         self.messages = Menssages()
@@ -150,4 +154,12 @@ class Windows(QMainWindow):
         
     def openExcel(self):
         self.excel= ExcelDoc()
+        self.main.close()
+    
+    def openXML(self):
+        self.xml = FileXML()
+        self.main.close()
+        
+    def openTXML(self):
+        self.txml = Txml()
         self.main.close()
